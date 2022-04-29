@@ -2,7 +2,7 @@ function geoip(json){
     // Get state based on IP
     var state = json.region;
     console.log(state);
-    window.alert('Your state is currently shown as ' + state + '. If this is correct, press okay. If this is not correct, use the dropdown menu on the right side to navigate to your state.');
+    alert('Your state is currently shown as ' + state + '. If this is correct, press okay. If this is not correct, use the dropdown menu on the right side to navigate to your state.');
     // Set dynamic values in an object
     var links_obj = {
         links: {
@@ -61,17 +61,14 @@ function geoip(json){
     get_link = links_obj[ 'links' ][ state ];
     // Check if we have a link for the visitor's region, if not we'll set a default of 
     if(get_link == null) {
-        display_link = '';
+        display_link = 'We cannot find your location. Use the Sidebar.';
     } else {
         display_link = get_link;
     }
-    // Get the element we want to update by class
-    var link_elem = document.getElementsByClassName('update_link');
-
-    document.getElementById("demo").innerHTML = 'Thank you for using Rolly Polly!';
+    document.getElementById("state").innerHTML = 'Thank you for using Rolly Polly!';
     document.getElementById("links").innerHTML ='yes' + "<a '" + display_link + "'> Click me! </a>";
 }
-   for (var i = 0; i < link_elem.length; i++) {
+ /*  for (var i = 0; i < link_elem.length; i++) {
       var str = link_elem[i].innerHTML;
      link_elem[i].innerHTML = display_link;
-    }
+    }  */
