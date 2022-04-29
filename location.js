@@ -65,8 +65,11 @@ function geoip(json){
     } else {
         display_link = get_link;
     }
-    document.getElementById("state").innerHTML = 'Thank you for using Rolly Polly!';
+    var location = document.getElementById("state");
+    location.innerHTML('yes' + "<a '" + display_link + "'> Click me! </a>");
     document.getElementById("links").innerHTML ='yes' + "<a '" + display_link + "'> Click me! </a>";
+    console.log(display_link);
+    return state;
 }
  /*  for (var i = 0; i < link_elem.length; i++) {
       var str = link_elem[i].innerHTML;

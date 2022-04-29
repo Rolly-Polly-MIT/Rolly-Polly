@@ -1,6 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script>
+      function changeSelect() {
+    if (document.getElementById("dropdown-item").value == "Alabama") {
+        document.getElementById("divText").innerHTML = <a href="https://getbootstrap.com/docs/5.1/examples/dashboard/"></a>;
+    } else if (document.getElementById("dropBox").value == "2") {
+        document.getElementById("divText").innerHTML = "[HEADER] [DATE] [COUNT] ...";
+    } else if (document.getElementById("dropBox").value == "3") {
+        document.getElementById("divText").innerHTML = "[HEADER] ...";
+    } else if (document.getElementById("dropBox").value == "4") {
+        document.getElementById("divText").innerHTML = "NOTE [DATE] ...";
+    }
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -60,67 +72,170 @@
             Recommended Resources
           </a>
         </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">
+                <a aria-expanded="false">
                   <span data-feather="globe"></span>
                   By State
                 </a>
+                <select type="text" id="states" onchange="showLink()" aria-labelledby="dropdown01 navbarDarkDropdownMenuLink navbarScrollingDropdown"> 
+    <option value="1">Alabama</option>
+    <option value="2">Alaska</option>
+    <option value="3">Arizona</option>
+    <option value="4">Arkansas</option>
+    <option value="5">California</option>
+    <option value="6">Colorado</option>
+    <option value="7">Connecticut</option>
+    <option value="8">Delaware</option>
+    <option value="9">Florida</option>
+    <option value="10">Georgia</option>
+    <option value="11">Hawaii</option>
+    <option value="12">Idaho</option>
+    <option value="13">Illinois</option>
+    <option value="14">Indiana</option>
+    <option value="15">Iowa</option>
+    <option value="16">Kansas</option>
+    <option value="17">Kentucky</option>
+    <option value="18">Louisiana</option>
+    <option value="19">Maine</option>
+    <option value="20">Maryland</option>
+    <option value="21">Massachusetts</option>
+    <option value="22">Michigan</option>
+    <option value="23">Minnesota</option>
+    <option value="24">Mississippi</option>
+    <option value="25">Missouri</option>
+    <option value="26">Montana</option>
+    <option value="27">Nebraska</option>
+    <option value="28">Nevada</option>
+    <option value="29">New Hampshire</option>
+    <option value="30">New Jersey</option>
+    <option value="31">New Mexico</option>
+    <option value="32">New York</option>
+    <option value="33">North Carolina</option>
+    <option value="34">North Dakota</option>
+    <option value="35">Ohioa</option>
+    <option value="36">Oklahoma</option>
+    <option value="37">Oregon</option>
+    <option value="38">Pennsylvania</option>
+    <option value="39">Rhode Island</option>
+    <option value="40">South Carolina</option>
+    <option value="41">South Dakota</option>
+    <option value="42">Tennessee</option>
+    <option value="43">Texas</option>
+    <option value="44">Utah</option>
+    <option value="45">Vermont</option>
+    <option value="46">Virginia</option>
+    <option value="47">Washington/option>
+    <option value="48">West Virginia</option>
+    <option value="49">Wisconsin</option>    
+    <option value="50">Wyoming</option>
+</select>
 
-                <ul class="dropdown-menu navbar-nav-scroll" style="--bs-scroll-height: 200px;" aria-labelledby="dropdown01 navbarDarkDropdownMenuLink navbarScrollingDropdown">
-                  <li><a class="dropdown-item" href="alabama.html">Alabama</a></li>
-                  <li><a class="dropdown-item" href="alaska.html">Alaska</a></li>
-                  <li><a class="dropdown-item" href="arizona.html">Arizona</a></li>
-                  <li><a class="dropdown-item" href="arkansas.html">Arkansas</a></li>
-                  <li><a class="dropdown-item" href="#">California</a></li>
-                  <li><a class="dropdown-item" href="#">Colorado</a></li>
-                  <li><a class="dropdown-item" href="#">Connecticut</a></li>
-                  <li><a class="dropdown-item" href="#">Delaware</a></li>
-                  <li><a class="dropdown-item" href="#">Florida</a></li>
-                  <li><a class="dropdown-item" href="#">Georgia</a></li>
-                  <li><a class="dropdown-item" href="#">Hawaii</a></li>
-                  <li><a class="dropdown-item" href="#">Idaho</a></li>
-                  <li><a class="dropdown-item" href="#">Illinois</a></li>
-                  <li><a class="dropdown-item" href="#">Indiana</a></li>
-                  <li><a class="dropdown-item" href="#">Iowa</a></li>
-                  <li><a class="dropdown-item" href="#">Kansas</a></li>
-                  <li><a class="dropdown-item" href="#">Kentucky</a></li>
-                  <li><a class="dropdown-item" href="#">Louisiana</a></li>
-                  <li><a class="dropdown-item" href="#">Maine</a></li>
-                  <li><a class="dropdown-item" href="#">Maryland</a></li>
-                  <li><a class="dropdown-item" href="#">Massachusetts</a></li>
-                  <li><a class="dropdown-item" href="#">Michigan</a></li>
-                  <li><a class="dropdown-item" href="#">Minnesota</a></li>
-                  <li><a class="dropdown-item" href="#">Mississippi</a></li>
-                  <li><a class="dropdown-item" href="#">Missouri</a></li>
-                  <li><a class="dropdown-item" href="#">Montana</a></li>
-                  <li><a class="dropdown-item" href="#">Nebraska</a></li>
-                  <li><a class="dropdown-item" href="#">Nevada</a></li>
-                  <li><a class="dropdown-item" href="#">New Hampshire</a></li>
-                  <li><a class="dropdown-item" href="#">New Jersey</a></li>
-                  <li><a class="dropdown-item" href="#">New Mexico</a></li>
-                  <li><a class="dropdown-item" href="#">New York</a></li>
-                  <li><a class="dropdown-item" href="#">North Carolina</a></li>
-                  <li><a class="dropdown-item" href="#">North Dakota</a></li>
-                  <li><a class="dropdown-item" href="#">Ohio</a></li>
-                  <li><a class="dropdown-item" href="#">oklahoma</a></li>
-                  <li><a class="dropdown-item" href="#">Oregon</a></li>
-                  <li><a class="dropdown-item" href="#">Pennsylvania</a></li>
-                  <li><a class="dropdown-item" href="#">Rhode Island</a></li>
-                  <li><a class="dropdown-item" href="#">South Carolina</a></li>
-                  <li><a class="dropdown-item" href="#">South Dakota</a></li>
-                  <li><a class="dropdown-item" href="#">Tennessee</a></li>
-                  <li><a class="dropdown-item" href="#">Texas</a></li>
-                  <li><a class="dropdown-item" href="#">Utah</a></li>
-                  <li><a class="dropdown-item" href="#">Vermont</a></li>
-                  <li><a class="dropdown-item" href="#">Virginia</a></li>
-                  <li><a class="dropdown-item" href="#">Washington</a></li>
-                  <li><a class="dropdown-item" href="#">West Virginia</a></li>
-                  <li><a class="dropdown-item" href="#">Wisconsin</a></li>
-                  <li><a class="dropdown-item" href="#">Wyoming</a></li>
-
-
-                </ul>
-              </li>
+</form>
+<br>
+<br>
+<script>
+  function showLink() {
+    if (document.getElementById("states").value == "1") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.sos.alabama.gov/alabama-votes/voter/register-to-vote?ref=voteusa </a>";
+    } else if (document.getElementById("states").value == "2") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.elections.alaska.gov/Core/voterregistration.php </a>";
+      } else if (document.getElementById("states").value == "3") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://azsos.gov/elections/voting-election/register-vote-or-update-your-current-voter-information </a>";
+      } else if (document.getElementById("states").value == "4") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.sos.arkansas.gov/elections/for-voters </a>";
+      } else if (document.getElementById("states").value == "5") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://registertovote.ca.gov/ </a>";
+      } else if (document.getElementById("states").value == "6") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.sos.state.co.us/voter/pages/pub/olvr/verifyNewVoter.xhtml </a>";
+      } else if (document.getElementById("states").value == "7") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://voterregistration.ct.gov/OLVR/welcome.do </a>";
+      } else if (document.getElementById("states").value == "8") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://ivote.de.gov/VoterView </a>";
+      } else if (document.getElementById("states").value == "9") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://registertovoteflorida.gov/home </a>";
+      } else if (document.getElementById("states").value == "10") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://georgia.gov/register-to-vote </a>";
+      } else if (document.getElementById("states").value == "11") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://elections.hawaii.gov/register-to-vote/registration/ </a>";
+      } else if (document.getElementById("states").value == "12") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://elections.sos.idaho.gov/ElectionLink/ElectionLink/ApplicationInstructions.aspx </a>";
+      } else if (document.getElementById("states").value == "13") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://ova.elections.il.gov/?Name=Em5DYCKC4wXCKQSXTgsQ9knm%2b5Ip27VC&T=637623864062530637 </a>";
+      } else if (document.getElementById("states").value == "14") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.in.gov/sos/elections/voter-information/register-to-vote/ </a>";
+      } else if (document.getElementById("states").value == "15") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://sos.iowa.gov/elections/voterinformation/voterregistration.html </a>";
+      } else if (document.getElementById("states").value == "16") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.kdor.ks.gov/Apps/VoterReg/Default.aspx </a>";
+      } else if (document.getElementById("states").value == "17") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://vrsws.sos.ky.gov/VIC/ </a>";
+      } else if (document.getElementById("states").value == "18") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.sos.la.gov/ElectionsAndVoting/RegisterToVote/Pages/default.aspx </a>";
+      } else if (document.getElementById("states").value == "19") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.maine.gov/sos/cec/elec/voter-info/votreg.html</a>";
+      } else if (document.getElementById("states").value == "20") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://elections.maryland.gov/voter_registration/index.html </a>";
+      } else if (document.getElementById("states").value == "21") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.sec.state.ma.us/OVR/ </a>";
+      } else if (document.getElementById("states").value == "22") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://mvic.sos.state.mi.us/Home/RegisterToVote </a>";
+      } else if (document.getElementById("states").value == "23") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.sos.state.mn.us/elections-voting/register-to-vote/ </a>";
+      } else if (document.getElementById("states").value == "24") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.sos.ms.gov/elections-voting/voter-registration-information </a>";
+      } else if (document.getElementById("states").value == "25") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.sos.mo.gov/elections/goVoteMissouri/register </a>";
+      } else if (document.getElementById("states").value == "26") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://sosmt.gov/elections/vote/ </a>";
+      } else if (document.getElementById("states").value == "27") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.nebraska.gov/apps-sos-voter-registration/ </a>";
+      } else if (document.getElementById("states").value == "28") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.nvsos.gov/sos/elections/voters/registering-to-vote </a>";
+      } else if (document.getElementById("states").value == "29") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://sos.nh.gov/elections/voters/register-to-vote/ </a>";
+      } else if (document.getElementById("states").value == "30") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://nj.gov/state/elections/voter-registration.shtmll </a>";
+      } else if (document.getElementById("states").value == "31") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://portal.sos.state.nm.us/OVR/WebPages/InstructionsStep1.aspx </a>";
+      } else if (document.getElementById("states").value == "32") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.elections.ny.gov/VotingRegister.html </a>";
+      } else if (document.getElementById("states").value == "33") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.ncsbe.gov/registering </a>";
+      } else if (document.getElementById("states").value == "34") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://vote.nd.gov/PortalListDetails.aspx?ptlhPKID=73&ptlPKID=5 </a>";
+      } else if (document.getElementById("states").value == "35") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://olvr.ohiosos.gov/ </a>";
+      } else if (document.getElementById("states").value == "36") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://oklahoma.gov/elections/voter-info/register-to-vote.html </a>";
+      } else if (document.getElementById("states").value == "37") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://sos.oregon.gov/voting/Pages/registration.aspx?lang=en </a>";
+      } else if (document.getElementById("states").value == "38") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.pavoterservices.pa.gov/Pages/VoterRegistrationApplication.aspx </a>";
+      } else if (document.getElementById("states").value == "39") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://vote.sos.ri.gov/Home/RegistertoVote?ActiveFlag=1 </a>";
+      } else if (document.getElementById("states").value == "40") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.scvotes.gov/south-carolina-voter-registration-information </a>";
+      } else if (document.getElementById("states").value == "41") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://sdsos.gov/elections-voting/voting/register-to-vote/default.aspx </a>";
+      } else if (document.getElementById("states").value == "42") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://sos.tn.gov/products/elections/register-vote </a>";
+      } else if (document.getElementById("states").value == "43") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.votetexas.gov/register/index.html </a>";
+      } else if (document.getElementById("states").value == "44") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://voteinfo.utah.gov/learn-about-registering-to-vote/ </a>";
+      } else if (document.getElementById("states").value == "45") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://sos.vermont.gov/elections/voters/registration/ </a>";
+      } else if (document.getElementById("states").value == "46") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://www.elections.virginia.gov/registration/ </a>";
+      } else if (document.getElementById("states").value == "47") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://voter.votewa.gov/WhereToVote.aspx </a>";
+      } else if (document.getElementById("states").value == "48") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://ovr.sos.wv.gov/Register/Landing </a>";
+      } else if (document.getElementById("states").value == "49") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://myvote.wi.gov/en-us/Register-To-Vote </a>";
+      } else if (document.getElementById("states").value == "50") {
+        document.getElementById("resource").innerHTML = "<a href=url>https://sos.wyo.gov/Elections/State/RegisteringToVote.aspx </a>";
+    }
+}</script>
 
               <li class="nav-item">
                 <a class="nav-link" href="sources.html">
@@ -143,7 +258,7 @@
 
       <h2>Resources Based On Location</h2>
       <div class="table-responsive">
-        <button onclick="geoip(json)">Find your sources</button>
+        <button onclick="geoip(JSON)">Find your sources</button>
         <table class="table table-striped table-sm">
           <thead>
             <tr>
@@ -153,7 +268,7 @@
           </thead>
           <tbody>
             <tr>
-              <td id="state"></td>
+              <td id="state"></td> <div id="resource">THIS TEXT SHOULD CHANGE</div>
               <td id="links"></td>
             </tr>
           </tbody>
