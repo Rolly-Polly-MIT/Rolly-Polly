@@ -1,10 +1,5 @@
-function fun() {
-    document.getElementById("demo").innerHTML = 'Thank you for using Rolly Polly!';
-    document.getElementById("links").innerHTML +='yes' + "<a href='https://app.ipgeolocation.io/'>Google</a>";
-  }
-function geoip(json){
-   
-    // Get country code based on IP
+function geoip(json){   
+    // Get state based on IP
     var state = json.region;
     console.log(state);
     window.alert('Your state is currently shown as ' + state + '. If this is correct, press okay. If this is not correct, use the dropdown menu on the right side to navigate to your state.');
