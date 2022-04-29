@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Rolly Polly</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
+    <script type="text/javascript" src="sort-table.js"></script>
+    <style type="text/css">
+      table { border: 1px solid black; border-collapse: collapse; }
+
+          th, td { padding: 2px 5px; border: 1px solid black; }
+
+          thead { background: #ddd; }
+
+          table#demo2.js-sort-0 tbody tr td:nth-child(1),
+          table#demo2.js-sort-1 tbody tr td:nth-child(2),
+          table#demo2.js-sort-2 tbody tr td:nth-child(3),
+          table#demo2.js-sort-3 tbody tr td:nth-child(4),
+          table#demo2.js-sort-4 tbody tr td:nth-child(5),
+          table#demo2.js-sort-5 tbody tr td:nth-child(6),
+          table#demo2.js-sort-6 tbody tr td:nth-child(7),
+          table#demo2.js-sort-7 tbody tr td:nth-child(8),
+          table#demo2.js-sort-8 tbody tr td:nth-child(9),
+          table#demo2.js-sort-9 tbody tr td:nth-child(10) {
+              background: #dee;
+          }
+        </style>
+
+
+
+    <!-- Bootstrap core CSS -->
+<link href="https://rolly-polly-mit.github.io/Rolly-Polly/ast/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+    <script src="sort-table.js"></script>
+    <link rel="stylesheet" href="sort-table.css">
+  </head>
+  <body>
+
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="index.html">Rolly Polly</a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link "  href="map.html">
+              <span data-feather="map"></span>
+              Map
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">
+              <span data-feather="map-pin"></span>
+              Recommended Resources
+            </a>
+          </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="state.html" aria-current="page">
+                    <span data-feather="globe"></span>
+                    By State
+                  </a>
+                </li>
+                <li class="nav-item" aria-current="page">
+                  <a class="nav-link" href="sources.html" >
+                    <span data-feather="external-link"></span>
+                    Sources
+                  </a>
+                </li>
+
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+
+      </div>
+      <script src="sort-table.js"></script>
+
+      <h2>Predicted Voter Turnout By State</h2>
+      <p>Click to Sort</p>
+
+        <table class="table table-bordered table-hover table-responsive table-condensed js-sort-table" id="demo3">
+          <thead><tr><td title="Field #1" class="js-sort-string">State</td>
+          <td title="Field #2" class="js-sort-number">Turnout</td>
+          </tr></thead>
+          <tbody><tr>
+          <td>Alabama</td>
+          <td>0.5809785252867264</td>
+          </tr>
+          <tr>
+          <td>Alaska</td>
+          <td>0.5953190699395633</td>
+          </tr>
+          <tr>
+          <td>Arizona</td>
+          <td>0.5802791744870397</td>
+          </tr>
+          <tr>
+          <td>Arkansas</td>
+          <td>0.5463388155929528</td>
+          </tr>
+          <tr>
+          <td>California</td>
+          <td>0.5551876759449585</td>
+          </tr>
+          <tr>
+          <td>Colorado</td>
+          <td>0.5381751049696905</td>
+          </tr>
+          <tr>
+          <td>Connecticut</td>
+          <td>0.5381751049696905</td>
+          </tr>
+          <tr>
+          <td>Delaware</td>
+          <td>0.6040587116033463</td>
+          </tr>
+          <tr>
+          <td>Florida</td>
+          <td>0.5638543850823489</td>
+          </tr>
+          <tr>
+          <td>Georgia</td>
+          <td>0.6107158950499044</td>
+          </tr>
+          <tr>
+          <td>Hawaii</td>
+          <td>0.5797479167979958</td>
+          </tr>
+          <tr>
+          <td>Idaho</td>
+          <td>0.5999466351138751</td>
+          </tr>
+          <tr>
+          <td>Illinois</td>
+          <td>0.5804466273274367</td>
+          </tr>
+          <tr>
+          <td>Indiana</td>
+          <td>0.5971824095935389</td>
+          </tr>
+          <tr>
+          <td>Iowa</td>
+          <td>0.6102224340978784</td>
+          </tr>
+          <tr>
+          <td>Kansas</td>
+          <td>0.5971824095935389</td>
+          </tr>
+          <tr>
+          <td>Kentucky</td>
+          <td>0.6456421652610033</td>
+          </tr>
+          <tr>
+          <td>Louisiana</td>
+          <td>0.6074108633235962</td>
+          </tr>
+          <tr>
+          <td>Maine</td>
+          <td>0.5551876759449585</td>
+          </tr>
+          <tr>
+          <td>Maryland</td>
+          <td>0.5551876759449585</td>
+          </tr>
+          <tr>
+          <td>Massachusetts</td>
+          <td>0.5700991781236927</td>
+          </tr>
+          <tr>
+          <td>Michigan</td>
+          <td>0.5216838488285382</td>
+          </tr>
+          <tr>
+          <td>Minnesota</td>
+          <td>0.5346183242004215</td>
+          </tr>
+          <tr>
+          <td>Mississippi</td>
+          <td>0.5426684711935573</td>
+          </tr>
+          <tr>
+          <td>Missouri</td>
+          <td>0.5732628754662703</td>
+          </tr>
+          <tr>
+          <td>Montana</td>
+          <td>0.6168027694165304</td>
+          </tr>
+          <tr>
+          <td>Nebraska</td>
+          <td>0.5913846266701012</td>
+          </tr>
+          <tr>
+          <td>Nevada</td>
+          <td>0.5551876759449585</td>
+          </tr>
+          <tr>
+          <td>New Hampshire</td>
+          <td>0.5339747793252091</td>
+          </tr>
+          <tr>
+          <td>New Jersey</td>
+          <td>0.5700991781236927</td>
+          </tr>
+          <tr>
+          <td>New Mexico</td>
+          <td>0.5700991781236927</td>
+          </tr>
+          <tr>
+          <td>New York</td>
+          <td>0.5532957028975257</td>
+          </tr>
+          <tr>
+          <td>North Carolina</td>
+          <td>0.5589414474328961</td>
+          </tr>
+          <tr>
+          <td>North Dakota</td>
+          <td>0.5899617293763731</td>
+          </tr>
+          <tr>
+          <td>Ohio</td>
+          <td>0.5899617293763731</td>
+          </tr>
+          <tr>
+          <td>Oklahoma</td>
+          <td>0.6456421652610033</td>
+          </tr>
+          <tr>
+          <td>Oregon</td>
+          <td>0.5369875042662238</td>
+          </tr>
+          <tr>
+          <td>Pennsylvania</td>
+          <td>0.532796447556043</td>
+          </tr>
+          <tr>
+          <td>Rhode Island</td>
+          <td>0.5538518700988355</td>
+          </tr>
+          <tr>
+          <td>South Carolina</td>
+          <td>0.6258578046978238</td>
+          </tr>
+          <tr>
+          <td>South Dakota</td>
+          <td>0.6168027694165304</td>
+          </tr>
+          <tr>
+          <td>Tennessee</td>
+          <td>0.6243519634290419</td>
+          </tr>
+          <tr>
+          <td>Texas</td>
+          <td>0.568726226030484</td>
+          </tr>
+          <tr>
+          <td>Utah</td>
+          <td>0.6013936144702939</td>
+          </tr>
+          <tr>
+          <td>Vermont</td>
+          <td>0.5551876759449585</td>
+          </tr>
+          <tr>
+          <td>Virginia</td>
+          <td>0.5694129232988268</td>
+          </tr>
+          <tr>
+          <td>Washington</td>
+          <td>0.5545193707869379</td>
+          </tr>
+          <tr>
+          <td>West Virginia</td>
+          <td>0.5732628754662703</td>
+          </tr>
+          <tr>
+          <td>Wisconsin</td>
+          <td>0.5815625189789558</td>
+          </tr>
+          <tr>
+          <td>Wyoming</td>
+          <td>0.5783530179375008</td>
+          </tr>
+          </tbody></table>
+
+
+
+    </main>
+
+  </div>
+
+</div>
+
+
+    <script src="https://rolly-polly-mit.github.io/Rolly-Polly/ast/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="dashboard.js"></script>
+  </body>
+</html>
