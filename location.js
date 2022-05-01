@@ -1,9 +1,10 @@
-function geoip(json){   
+
+function geoip(JSON){   
     // Get state based on IP
-    var state = json.region;
+    var state = JSON.regionName;
     console.log(state);
     alert('Your state is currently shown as ' + state + '. If this is correct, press okay. If this is not correct, use the dropdown menu on the right side to navigate to your state.');
-    // Set dynamic values in an object
+    // Set dynamic valsues in an object
     var links_obj = {
         links: {
             Alabama	        : 'https://www.sos.alabama.gov/alabama-votes/voter/register-to-vote?ref=voteusa',
@@ -58,6 +59,10 @@ function geoip(json){
             Wyoming	        : 'https://sos.wyo.gov/Elections/State/RegisteringToVote.aspx',
            }    
         }
+    if(state==null) {
+        yourstate = 'We cannot find your location.';
+    } else
+        yourstate = state;
     get_link = links_obj[ 'links' ][ state ];
     // Check if we have a link for the visitor's region, if not we'll set a default of 
     if(get_link == null) {
@@ -65,13 +70,12 @@ function geoip(json){
     } else {
         display_link = get_link;
     }
-    var location = document.getElementById("state");
-    location.innerHTML('yes' + "<a '" + display_link + "'> Click me! </a>");
-    document.getElementById("links").innerHTML ='yes' + "<a '" + display_link + "'> Click me! </a>";
+    document.getElementById("state").innerHTML = yourstate;
+    document.getElementById("links").innerHTML = display_link ;
     console.log(display_link);
     return state;
-}
- /*  for (var i = 0; i < link_elem.length; i++) {
+for (var i = 0; i < link_elem.length; i++) {
       var str = link_elem[i].innerHTML;
      link_elem[i].innerHTML = display_link;
-    }  */
+    } 
+}
