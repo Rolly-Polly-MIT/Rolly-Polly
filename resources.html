@@ -1,19 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <script>
-      function changeSelect() {
-    if (document.getElementById("dropdown-item").value == "Alabama") {
-        document.getElementById("divText").innerHTML = <a href="https://getbootstrap.com/docs/5.1/examples/dashboard/"></a>;
-    } else if (document.getElementById("dropBox").value == "2") {
-        document.getElementById("divText").innerHTML = "[HEADER] [DATE] [COUNT] ...";
-    } else if (document.getElementById("dropBox").value == "3") {
-        document.getElementById("divText").innerHTML = "[HEADER] ...";
-    } else if (document.getElementById("dropBox").value == "4") {
-        document.getElementById("divText").innerHTML = "NOTE [DATE] ...";
-    }
-  }
-    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -263,9 +250,10 @@
           </thead>
           <tbody>
             <tr>
-              <td id="state"></td> <div id="resource"></div>
+              <td id="state"></td> 
               <td id="links"></td>
             </tr>
+            <div id="resource"></div>
           </tbody>
         </table>
     </main>

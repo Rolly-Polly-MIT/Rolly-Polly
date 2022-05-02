@@ -74,8 +74,4 @@ function geoip(JSON){
     document.getElementById("links").innerHTML = display_link ;
     console.log(display_link);
     return state;
-for (var i = 0; i < link_elem.length; i++) {
-      var str = link_elem[i].innerHTML;
-     link_elem[i].innerHTML = display_link;
-    } 
 }
