@@ -153,7 +153,7 @@ function showLink() {
 }
 function geoip(JSON){   
     // Get state based on IP
-    var state = JSON.regionName;
+    var state = JSON.region;
     console.log(state);
     alert('Your state is currently shown as ' + state + '. If this is correct, press okay. If this is not correct, use the dropdown menu on the right side to navigate to your state.');
     // Set dynamic valsues in an object
