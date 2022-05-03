@@ -194,13 +194,16 @@
           L.geoJson(statesData).addTo(map);
 
           function getColor(d) {
-          return d > 18 ? '#FFEDA0' :
-                 d > 15  ? '#FED976' :
-                 d > 12  ? '#FEB24C' :
-                 d > 9  ? '#FD8D3C' :
-                 d > 6   ? '#FC4E2A' :
-                 d > 3   ? '#E31A1C' :
-                 d > 0   ? '#BD0026' :
+          return d > 18 ? '#008000' :
+                 d > 15  ? '#31AD26' :
+                 d > 14 ? '#47AC43':
+                 d > 13 ? '#6AAC4B':
+                 d > 12  ? '#8AAB59' :
+                 d > 10  ? '#FFD746' :
+                 d > 9  ? '#FFA024' :
+                 d > 6   ? '#E65A0F' :
+                 d > 3   ? '#FF2218' :
+                 d > 0   ? '#8B422E' :
                            '#FFFFFF';
           }
           function style(feature) {
